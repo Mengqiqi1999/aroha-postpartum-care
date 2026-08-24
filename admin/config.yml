@@ -2,7 +2,7 @@ backend:
   name: github
   repo: Mengqiqi1999/aroha-postpartum-care   # TODO: replace with real "username/repo"
   branch: main
-  base_url: https://YOUR-OAUTH-WORKER.workers.dev   # TODO: replace with the deployed oauth-proxy Worker URL
+  base_url: https://winter-bush-bb57.mengqiqi1999.workers.dev    # TODO: replace with the deployed oauth-proxy Worker URL
   auth_endpoint: auth
 
 # Editors log in with a GitHub account; every save creates a commit to the repo above,
