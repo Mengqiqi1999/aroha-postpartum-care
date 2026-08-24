@@ -1,5 +1,0 @@
-name = "sparkling-frog-6bff"
-compatibility_date = "2026-08-01"
-
-[assets]
-directory = "."
