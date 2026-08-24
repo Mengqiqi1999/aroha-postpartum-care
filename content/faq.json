@@ -1,0 +1,50 @@
+{
+  "f1": {
+    "en": "FAQ",
+    "zh": "常见问题"
+  },
+  "f2": {
+    "en": "Common questions",
+    "zh": "常见问题解答"
+  },
+  "f3": {
+    "en": "Do your nannies speak English?",
+    "zh": "月嫂会说英语吗？"
+  },
+  "f4": {
+    "en": "Most of our nannies are bilingual in English and Mandarin. Let us know your family's preference and we'll match accordingly.",
+    "zh": "我们的大部分月嫂都能中英双语沟通，请告知我们您家庭的偏好，我们会为您做相应匹配。"
+  },
+  "f5": {
+    "en": "Which cities in Australia do you serve?",
+    "zh": "你们服务澳大利亚哪些城市？"
+  },
+  "f6": {
+    "en": "[Placeholder — list your service cities here, e.g. Sydney, Melbourne, Brisbane.]",
+    "zh": "[占位内容 — 请填写具体服务城市，例如悉尼、墨尔本、布里斯班]"
+  },
+  "f7": {
+    "en": "How far in advance should I book?",
+    "zh": "需要提前多久预约？"
+  },
+  "f8": {
+    "en": "[Placeholder — add your recommended booking lead time.]",
+    "zh": "[占位内容 — 请填写建议的提前预约时间]"
+  },
+  "f9": {
+    "en": "How much does the service cost?",
+    "zh": "服务费用大概是多少？"
+  },
+  "f10": {
+    "en": "[Placeholder — add pricing details or a starting-from figure.]",
+    "zh": "[占位内容 — 请填写具体价格或起始价]"
+  },
+  "f11": {
+    "en": "How do I apply to become a nanny?",
+    "zh": "我想成为月嫂，该怎么申请？"
+  },
+  "f12": {
+    "en": "Get in touch via the contact form below and our team will walk you through the training and application process.",
+    "zh": "请通过下方联系表单与我们取得联系，我们的团队会为您详细介绍培训与申请流程。"
+  }
+}

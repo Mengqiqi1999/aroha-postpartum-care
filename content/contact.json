@@ -1,0 +1,82 @@
+{
+  "f1": {
+    "en": "Get in Touch",
+    "zh": "联系我们"
+  },
+  "f2": {
+    "en": "Let's find the right fit for your family",
+    "zh": "让我们为您找到最合适的月嫂"
+  },
+  "f3": {
+    "en": "Email",
+    "zh": "邮箱"
+  },
+  "f4": {
+    "en": "Phone / WhatsApp",
+    "zh": "电话 / WhatsApp"
+  },
+  "f5": {
+    "en": "Based in",
+    "zh": "所在地"
+  },
+  "f6": {
+    "en": "New Zealand — serving NZ &amp; Australia",
+    "zh": "新西兰 — 服务新西兰与澳大利亚"
+  },
+  "f7": {
+    "en": "Full Name",
+    "zh": "姓名"
+  },
+  "f8_ph": {
+    "en": "Your name",
+    "zh": "请输入姓名"
+  },
+  "f9": {
+    "en": "Email",
+    "zh": "邮箱"
+  },
+  "f10_ph": {
+    "en": "you@example.com",
+    "zh": "you@example.com"
+  },
+  "f11": {
+    "en": "Phone",
+    "zh": "电话"
+  },
+  "f12_ph": {
+    "en": "Optional",
+    "zh": "选填"
+  },
+  "f13": {
+    "en": "I'm enquiring as a…",
+    "zh": "我的身份是…"
+  },
+  "f14": {
+    "en": "Family seeking care",
+    "zh": "需要护理服务的家庭"
+  },
+  "f15": {
+    "en": "Prospective nanny / trainee",
+    "zh": "想成为月嫂 / 学员"
+  },
+  "f16": {
+    "en": "Other",
+    "zh": "其他"
+  },
+  "f17": {
+    "en": "Message",
+    "zh": "留言"
+  },
+  "f18_ph": {
+    "en": "Tell us a little about what you need…",
+    "zh": "请简单描述您的需求…"
+  },
+  "f19": {
+    "en": "Send Enquiry",
+    "zh": "提交咨询"
+  },
+  "f20": {
+    "en": "This is a demo form — it isn't connected to email yet. We'll wire it up once the site is on real hosting.",
+    "zh": "这是演示表单，目前尚未连接邮箱，正式上线后会接入真实的表单/邮件服务。"
+  }
+}

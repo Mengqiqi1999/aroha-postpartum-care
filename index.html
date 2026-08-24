@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aroha Postpartum Care | NZ Confinement Nannies for Australia</title>
+<style>
+  :root{
+    --accent:#C05B4E;
+    --accent-dark:#A24638;
+    --dark:#2B2320;
+    --grey:#6B6560;
+    --lightbg:#F7F1EE;
+    --cream:#FFFDFB;
+    --sage:#8A9A7E;
+    --border:#E5DCD7;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    color: var(--dark);
+    background: var(--cream);
+    line-height:1.6;
+  }
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:1080px; margin:0 auto; padding:0 24px;}
+
+  /* placeholder banner */
+  .draft-banner{
+    background:#3A2E29; color:#F5EDE9; text-align:center;
+    font-size:13px; padding:8px 16px; letter-spacing:.3px;
+  }
+  .draft-banner b{color:#F0B49E;}
+
+  /* header */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(255,253,251,0.92); backdrop-filter: blur(6px);
+    border-bottom:1px solid var(--border);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 24px; max-width:1080px; margin:0 auto;
+  }
+  .brand{display:flex; align-items:center; gap:10px; font-weight:700; font-size:20px; letter-spacing:.2px;}
+  .brand .mark{
+    width:34px; height:34px; border-radius:50%;
+    background: linear-gradient(135deg, var(--accent), var(--sage));
+    display:flex; align-items:center; justify-content:center; color:#fff; font-size:16px; font-weight:800;
+  }
+  nav.links{display:flex; gap:26px; font-size:15px; font-weight:500;}
+  nav.links a{text-decoration:none; color:var(--grey); transition:color .15s;}
+  nav.links a:hover{color:var(--accent);}
+  .nav-actions{display:flex; align-items:center; gap:12px;}
+  .lang-toggle{
+    border:1px solid var(--border); background:#fff; color:var(--dark);
+    padding:7px 14px; border-radius:999px; font-size:13px; font-weight:600;
+    cursor:pointer;
+  }
+  .btn{
+    display:inline-block; text-decoration:none; border:none; cursor:pointer;
+    padding:11px 22px; border-radius:8px; font-size:14px; font-weight:700;
+    background:var(--accent); color:#fff; transition:background .15s, transform .1s;
+  }
+  .btn:hover{background:var(--accent-dark);}
+  .btn.ghost{background:transparent; color:var(--dark); border:1px solid var(--border);}
+  .menu-toggle{display:none; background:none; border:none; font-size:24px; cursor:pointer; color:var(--dark);}
+
+  /* contact dropdown */
+  .nav-dropdown{position:relative;}
+  .nav-dropdown-trigger{
+    background:none; border:none; cursor:pointer; font:inherit;
+    display:flex; align-items:center; gap:4px; color:var(--grey); font-size:15px; font-weight:500; padding:0;
+  }
+  .nav-dropdown-trigger:hover{color:var(--accent);}
+  .nav-dropdown .caret{font-size:11px; transition:transform .15s;}
+  .nav-dropdown.open .caret{transform:rotate(180deg);}
+  .nav-dropdown-menu{
+    display:none; position:absolute; top:calc(100% + 14px); left:50%; transform:translateX(-50%);
+    background:#fff; border:1px solid var(--border); border-radius:10px; padding:8px;
+    min-width:180px; box-shadow:0 12px 28px rgba(43,35,32,.12); z-index:60;
+  }
+  .nav-dropdown-menu a{
+    display:block; padding:9px 12px; border-radius:6px; font-size:14px; color:var(--dark); text-decoration:none;
+  }
+  .nav-dropdown-menu a:hover{background:var(--lightbg); color:var(--accent);}
+  .nav-dropdown.open .nav-dropdown-menu{display:block;}
+  @media (min-width:861px){
+    .nav-dropdown:hover .nav-dropdown-menu{display:block;}
+  }
+
+  /* hero */
+  .hero{
+    position:relative; overflow:hidden;
+    padding:96px 24px 72px; text-align:center;
+  }
+  .hero-slides{position:absolute; inset:0; z-index:0;}
+  .hero-slide{
+    position:absolute; inset:0; opacity:0;
+    transition:opacity 1.6s ease;
+    background-size:cover; background-position:center;
+  }
+  .hero-slide.active{opacity:1;}
+  .hero-scrim{
+    position:absolute; inset:0; z-index:1;
+    background:linear-gradient(180deg, rgba(43,35,32,.62), rgba(43,35,32,.42) 45%, rgba(43,35,32,.68));
+  }
+  .hero .eyebrow{background:rgba(255,255,255,.16); color:#fff; border:1px solid rgba(255,255,255,.35);}
+  .hero h1{color:#fff;}
+  .hero p.lead{color:rgba(255,253,251,.88);}
+  .hero .badge-row{color:rgba(255,253,251,.85);}
+  .hero .badge-row .dot{background:#F0B49E;}
+  .hero .img-note{color:rgba(255,253,251,.6);}
+  .eyebrow{
+    display:inline-block; font-size:12px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase;
+    color:var(--accent); background:var(--lightbg); padding:6px 14px; border-radius:999px; margin-bottom:20px;
+  }
+  .hero h1{font-size:44px; line-height:1.2; max-width:720px; margin:0 auto 18px; font-weight:800;}
+  .hero p.lead{max-width:600px; margin:0 auto 32px; font-size:18px;}
+  .hero .cta-row{display:flex; gap:14px; justify-content:center; flex-wrap:wrap;}
+  .hero-images{
+    display:flex; gap:26px; justify-content:center; align-items:center; margin:48px 0 10px; flex-wrap:wrap;
+  }
+  .badge-circle{
+    width:112px; height:112px; border-radius:50%; background:#fff;
+    box-shadow:0 16px 32px rgba(43,35,32,.10);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .badge-circle.offset{transform:translateY(16px);}
+  .img-note{font-size:11.5px; color:#B0A8A2; text-align:center; margin-bottom:8px;}
+  .badge-row{
+    display:flex; gap:28px; justify-content:center; margin-top:56px; flex-wrap:wrap;
+    color:var(--grey); font-size:14px; font-weight:600;
+  }
+  .badge-row span{display:flex; align-items:center; gap:8px;}
+  .dot{width:6px; height:6px; border-radius:50%; background:var(--sage); display:inline-block;}
+
+  section{padding:76px 24px;}
+  .section-head{text-align:center; max-width:640px; margin:0 auto 48px;}
+  .section-head .eyebrow{margin-bottom:14px;}
+  .section-head h2{font-size:32px; font-weight:800; margin-bottom:14px;}
+  .section-head p{color:var(--grey); font-size:16px;}
+
+  .grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+  .card{
+    background:#fff; border:1px solid var(--border); border-radius:14px; padding:28px;
+  }
+  .card .icon{
+    width:46px; height:46px; border-radius:10px; background:var(--lightbg);
+    display:flex; align-items:center; justify-content:center; margin-bottom:18px; color:var(--accent);
+  }
+  .card h3{font-size:18px; margin-bottom:10px; font-weight:700;}
+  .card p{color:var(--grey); font-size:14.5px;}
+
+  .about-split{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center;}
+  .about-visual{
+    aspect-ratio:4/3; border-radius:18px;
+    background: linear-gradient(150deg, var(--lightbg), #EFE3DC);
+    display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden;
+  }
+  .about-visual::after{
+    content:""; position:absolute; width:220px; height:220px; border-radius:50%;
+    background:radial-gradient(circle, rgba(192,91,78,.18), transparent 70%);
+    top:-40px; right:-40px;
+  }
+  .about-visual svg{position:relative; z-index:1;}
+  .about-text h2{font-size:30px; font-weight:800; margin-bottom:16px;}
+  .about-text p{color:var(--grey); margin-bottom:14px; font-size:15.5px;}
+  .check-list{margin-top:20px; display:flex; flex-direction:column; gap:12px;}
+  .check-list div{display:flex; gap:10px; align-items:flex-start; font-size:14.5px; color:var(--dark);}
+  .check-list .tick{
+    flex-shrink:0; width:20px; height:20px; border-radius:50%; background:var(--sage);
+    color:#fff; display:flex; align-items:center; justify-content:center; font-size:12px; margin-top:1px;
+  }
+
+  .alt-bg{background:var(--lightbg);}
+
+  .steps{display:grid; grid-template-columns:repeat(4,1fr); gap:20px; margin-top:10px;}
+  .step{text-align:center; padding:0 8px;}
+  .step .num{
+    width:38px; height:38px; border-radius:50%; background:var(--accent); color:#fff;
+    display:flex; align-items:center; justify-content:center; font-weight:800; margin:0 auto 14px;
+  }
+  .step h4{font-size:15px; margin-bottom:6px; font-weight:700;}
+  .step p{font-size:13.5px; color:var(--grey);}
+
+  .training-box{
+    background:#fff; border:1px solid var(--border); border-radius:18px; padding:40px;
+    display:grid; grid-template-columns:1.1fr 1fr; gap:40px;
+  }
+  .training-box ul{list-style:none; display:flex; flex-direction:column; gap:12px;}
+  .training-box ul li{display:flex; gap:10px; font-size:14.5px; align-items:flex-start;}
+  .training-box ul li .tick{
+    flex-shrink:0; width:18px; height:18px; border-radius:50%; background:var(--lightbg);
+    color:var(--accent); display:flex; align-items:center; justify-content:center; font-size:11px; margin-top:2px; font-weight:800;
+  }
+  .training-meta{background:var(--lightbg); border-radius:14px; padding:26px;}
+  .training-meta dl{display:grid; grid-template-columns:auto 1fr; gap:10px 14px; font-size:14px;}
+  .training-meta dt{color:var(--grey); font-weight:600;}
+  .training-meta dd{font-weight:700;}
+
+  .quotes{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  .quote-card{background:#fff; border:1px solid var(--border); border-radius:14px; padding:24px;}
+  .quote-card .stars{color:#E0A24B; font-size:14px; margin-bottom:12px; letter-spacing:2px;}
+  .quote-card p.text{font-size:14.5px; color:var(--dark); margin-bottom:16px; font-style:italic;}
+  .quote-card .who{display:flex; align-items:center; gap:10px;}
+  .quote-card .avatar{width:34px; height:34px; border-radius:50%; background:var(--lightbg); color:var(--accent); display:flex; align-items:center; justify-content:center; font-weight:700; font-size:13px;}
+  .quote-card .who b{font-size:13.5px; display:block;}
+  .quote-card .who span{font-size:12px; color:var(--grey);}
+
+  .faq-item{border-bottom:1px solid var(--border); padding:18px 0;}
+  .faq-q{
+    display:flex; justify-content:space-between; align-items:center; cursor:pointer;
+    font-weight:700; font-size:15.5px;
+  }
+  .faq-q .plus{font-size:20px; color:var(--accent); transition:transform .2s; flex-shrink:0; margin-left:12px;}
+  .faq-item.open .plus{transform:rotate(45deg);}
+  .faq-a{max-height:0; overflow:hidden; transition:max-height .25s ease; font-size:14.5px; color:var(--grey);}
+  .faq-item.open .faq-a{max-height:220px; padding-top:12px;}
+
+  .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:48px;}
+  .contact-info .item{display:flex; gap:12px; margin-bottom:20px; align-items:flex-start;}
+  .contact-info .icon{
+    width:38px; height:38px; border-radius:10px; background:var(--lightbg); color:var(--accent);
+    display:flex; align-items:center; justify-content:center; flex-shrink:0;
+  }
+  .contact-info h4{font-size:14px; margin-bottom:3px;}
+  .contact-info p{font-size:13.5px; color:var(--grey);}
+  form.enquiry{background:#fff; border:1px solid var(--border); border-radius:16px; padding:30px;}
+  .form-row{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:14px;}
+  .field{margin-bottom:14px; display:flex; flex-direction:column; gap:6px;}
+  .field label{font-size:12.5px; font-weight:700; color:var(--grey);}
+  .field input, .field select, .field textarea{
+    border:1px solid var(--border); border-radius:8px; padding:11px 12px; font-size:14px; font-family:inherit;
+    background:var(--cream);
+  }
+  .field textarea{resize:vertical; min-height:90px;}
+  .form-note{font-size:12px; color:var(--grey); margin-top:10px;}
+
+  footer{background:var(--dark); color:#EDE6E2; padding:50px 24px 26px;}
+  .footer-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:40px; margin-bottom:36px;}
+  footer .brand{color:#fff;}
+  footer p.tag{color:#B8AEA8; font-size:13.5px; margin-top:12px; max-width:280px;}
+  footer h5{font-size:13px; text-transform:uppercase; letter-spacing:1px; color:#B8AEA8; margin-bottom:14px;}
+  footer ul{list-style:none; display:flex; flex-direction:column; gap:10px; font-size:14px;}
+  footer ul a{text-decoration:none; color:#EDE6E2;}
+  .footer-bottom{
+    border-top:1px solid rgba(255,255,255,.12); padding-top:20px; text-align:center;
+    font-size:12.5px; color:#9C928C;
+  }
+
+  @media (max-width: 860px){
+    nav.links{
+      display:none; position:absolute; top:100%; left:0; right:0;
+      background:#fff; border-bottom:1px solid var(--border);
+      flex-direction:column; gap:0; padding:8px 24px 16px;
+    }
+    nav.links.mobile-open{display:flex;}
+    nav.links a{padding:12px 0; border-bottom:1px solid var(--border);}
+    nav.links a:last-child{border-bottom:none;}
+    nav.links .nav-dropdown{width:100%;}
+    nav.links .nav-dropdown-trigger{width:100%; justify-content:space-between; padding:12px 0; border-bottom:1px solid var(--border); color:var(--dark); font-size:16px;}
+    nav.links .nav-dropdown-menu{
+      position:static; display:none; transform:none; box-shadow:none; border:none;
+      padding:2px 0 2px 14px; min-width:0; background:transparent;
+    }
+    nav.links .nav-dropdown.open .nav-dropdown-menu{display:block;}
+    nav.links .nav-dropdown-menu a{padding:10px 0; border-bottom:1px dashed var(--border); font-size:14.5px; color:var(--grey);}
+    nav.links .nav-dropdown-menu a:last-child{border-bottom:none;}
+    .nav-actions .btn{display:none;}
+    .menu-toggle{display:block;}
+    .grid-3, .about-split, .steps, .quotes, .footer-grid, .contact-grid{grid-template-columns:1fr;}
+    .training-box{grid-template-columns:1fr;}
+    .hero h1{font-size:32px;}
+    .form-row{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<div class="draft-banner">
+  <span data-key="banner.f1">🧡 Draft preview — placeholder brand name &amp; content, for testing only.</span>
+  <b> <span data-key="banner.f2">Not the final site.</span></b>
+</div>
+
+<header>
+  <div class="nav">
+    <div class="brand"><span class="mark">A</span><span data-key="header.f1">Aroha Postpartum Care</span></div>
+    <nav class="links">
+      <a href="#home" data-key="header.f2">Home</a>
+      <a href="#about" data-key="header.f3">About</a>
+      <a href="#services" data-key="header.f4">Services</a>
+      <a href="#why-us" data-key="header.f5">Why Us</a>
+      <a href="#faq" data-key="header.f6">FAQ</a>
+      <div class="nav-dropdown" id="contactDropdown">
+        <button class="nav-dropdown-trigger" type="button">
+          <span data-key="header.f7">Contact</span><span class="caret">▾</span>
+        </button>
+        <div class="nav-dropdown-menu">
+          <a href="#contact" data-key="header.f8">Contact Us</a>
+          <a href="#working-with-us" data-key="header.f9">Working with Us</a>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-actions">
+      <button class="lang-toggle" id="langToggle">中文</button>
+      <a href="#contact" class="btn" data-key="header.f10">Enquire Now</a>
+    </div>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <!--
+    HERO BACKGROUND SLIDESHOW — placeholder slides.
+    To use real photos later: on each .hero-slide below, replace the
+    "background:" gradient with e.g. background-image:url('photo.jpg');
+    background-size:cover; background-position:center;
+    (4 slides auto-rotate, see .hero-slide JS near the bottom of the file)
+  -->
+  <div class="hero-slides">
+    <div class="hero-slide active" style="background:linear-gradient(135deg,#C05B4E,#8A9A7E);"></div>
+    <div class="hero-slide" style="background:linear-gradient(135deg,#8A9A7E,#D9BFA6);"></div>
+    <div class="hero-slide" style="background:linear-gradient(135deg,#D9BFA6,#C05B4E);"></div>
+    <div class="hero-slide" style="background:linear-gradient(135deg,#6B5A46,#C05B4E);"></div>
+  </div>
+  <div class="hero-scrim"></div>
+  <div class="wrap" style="position:relative; z-index:2;">
+    <span class="eyebrow" data-key="home.f1">New Zealand → Australia</span>
+    <h1 data-key="home.f2">Trusted postpartum care, from Kiwi hands to Australian homes</h1>
+    <p class="lead" data-key="home.f3">We place experienced, trained New Zealand confinement nannies with families across Australia, and train the next generation of postpartum carers in NZ.</p>
+    <div class="cta-row">
+      <a href="#contact" class="btn" data-key="home.f4">Find a Nanny</a>
+    </div>
+    <div class="hero-images">
+      <div class="badge-circle">
+        <svg viewBox="0 0 200 200" width="82%" height="82%">
+          <circle cx="100" cy="105" r="70" fill="#F8E7D8"/>
+          <path d="M45 78 Q100 30 155 78 Q163 92 155 103 L45 103 Q37 92 45 78 Z" fill="#7A5C3E"/>
+          <circle cx="80" cy="100" r="6" fill="#2B2320"/>
+          <circle cx="120" cy="100" r="6" fill="#2B2320"/>
+          <circle cx="68" cy="118" r="11" fill="#E8967C" opacity=".55"/>
+          <circle cx="132" cy="118" r="11" fill="#E8967C" opacity=".55"/>
+          <path d="M72 122 Q100 148 128 122" stroke="#2B2320" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="badge-circle offset">
+        <svg viewBox="0 0 200 200" width="72%" height="72%">
+          <path d="M100 60 C70 30 30 40 25 75 C20 105 55 130 100 150 C145 130 180 105 175 75 C170 40 130 30 100 60 Z" fill="#C05B4E" opacity="0.15"/>
+          <path d="M40 120 C30 140 40 160 65 165 C90 170 130 170 155 165 C180 160 190 140 180 120" stroke="#8A9A7E" stroke-width="9" fill="none" stroke-linecap="round"/>
+          <path d="M100 70 C85 50 55 55 52 78 C50 98 75 115 100 128 C125 115 150 98 148 78 C145 55 115 50 100 70 Z" fill="#C05B4E"/>
+        </svg>
+      </div>
+      <div class="badge-circle">
+        <svg viewBox="0 0 400 400" width="88%" height="88%">
+          <ellipse cx="205" cy="345" rx="155" ry="80" fill="#8A9A7E"/>
+          <circle cx="195" cy="185" r="78" fill="#D9BFA6"/>
+          <path d="M140 150 Q195 90 250 150 Q262 175 250 195 L140 195 Q128 175 140 150 Z" fill="#6B5A46"/>
+          <ellipse cx="245" cy="262" rx="82" ry="62" fill="#F0DACB"/>
+          <circle cx="248" cy="222" r="42" fill="#F8E7D8"/>
+          <path d="M215 190 Q248 172 281 190 Q286 200 281 208 L215 208 Q210 200 215 190 Z" fill="#7A5C3E"/>
+          <circle cx="234" cy="220" r="3.6" fill="#2B2320"/>
+          <circle cx="262" cy="220" r="3.6" fill="#2B2320"/>
+          <circle cx="226" cy="232" r="6.5" fill="#E8967C" opacity=".55"/>
+          <circle cx="270" cy="232" r="6.5" fill="#E8967C" opacity=".55"/>
+          <path d="M231 236 Q248 250 265 236" stroke="#2B2320" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+    <p class="img-note" data-key="home.f5">Illustrations, not stock photos — original artwork, free to use.</p>
+    <div class="badge-row">
+      <span><i class="dot"></i><span data-key="home.f6">NZ-trained caregivers</span></span>
+      <span><i class="dot"></i><span data-key="home.f7">Bilingual support (EN / 中文)</span></span>
+      <span><i class="dot"></i><span data-key="home.f8">Serving NZ &amp; AU families</span></span>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-key="services.f1">What We Offer</span>
+      <h2 data-key="services.f2">Two ways we support new families</h2>
+      <p data-key="services.f3">Whether you need hands-on postpartum support or want to become a confinement carer yourself, we're here to help.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3 data-key="services.f4">Confinement Nanny Placement</h3>
+        <p data-key="services.f5">We match vetted, experienced NZ confinement nannies with families in Australia for live-in or live-out postpartum support, newborn care and traditional recovery practices.</p>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c0 1.66 3 3 6 3s6-1.34 6-3v-5"/></svg>
+        </div>
+        <h3 data-key="services.f6">Caregiver Training Program</h3>
+        <p data-key="services.f7">A structured training pathway for anyone in NZ wanting to become a professional postpartum carer, covering newborn care, nutrition, and cross-cultural client care.</p>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3 data-key="services.f8">Ongoing Support</h3>
+        <p data-key="services.f9">From first enquiry to placement and beyond, our team stays in touch with both families and carers to make sure every arrangement goes smoothly.</p>
+      </div>
+    </div>
+
+    <div class="section-head" style="margin-top:64px;">
+      <h2 style="font-size:24px;" data-key="services.f10">How placement works</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><h4 data-key="services.f11">Enquiry</h4><p data-key="services.f12">Tell us about your family's needs and timeline.</p></div>
+      <div class="step"><div class="num">2</div><h4 data-key="services.f13">Matching</h4><p data-key="services.f14">We shortlist vetted nannies suited to you.</p></div>
+      <div class="step"><div class="num">3</div><h4 data-key="services.f15">Interview</h4><p data-key="services.f16">Meet your nanny and confirm the arrangement.</p></div>
+      <div class="step"><div class="num">4</div><h4 data-key="services.f17">Placement</h4><p data-key="services.f18">Care begins, with our team on call throughout.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="why-us">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-key="why-us.f1">Our Strengths</span>
+      <h2 data-key="why-us.f2">Why Choose Us</h2>
+      <p data-key="why-us.f3">Six reasons families and caregivers on both sides of the Tasman choose to work with us.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M9 14.5 6 22l6-3 6 3-3-7.5"/></svg></div>
+        <h3 data-key="why-us.f4">Certified &amp; Trained</h3>
+        <p data-key="why-us.f5">Every caregiver completes our structured training program and holds relevant certification before placement.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6l-8-4z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3 data-key="why-us.f6">Thoroughly Vetted</h3>
+        <p data-key="why-us.f7">All caregivers pass background checks and reference verification, for your family's peace of mind.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.4 8.5 8.5 0 0 1-4-1L3 20l1.1-5.5a8.4 8.4 0 0 1-1-4A8.38 8.38 0 0 1 11.5 2c4.7 0 9.5 3.8 9.5 9.5z"/></svg></div>
+        <h3 data-key="why-us.f8">Bilingual Support</h3>
+        <p data-key="why-us.f9">Our coordination team and most caregivers communicate fluently in both English and Mandarin.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.5" fill="currentColor"/></svg></div>
+        <h3 data-key="why-us.f10">Personalised Matching</h3>
+        <p data-key="why-us.f11">We take time to understand your family's needs before matching you with the right caregiver.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg></div>
+        <h3 data-key="why-us.f12">NZ ⇄ AU Support</h3>
+        <p data-key="why-us.f13">From New Zealand training to Australian placement, our team supports both sides of every arrangement.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+        <h3 data-key="why-us.f14">Flexible Arrangements</h3>
+        <p data-key="why-us.f15">Live-in or live-out, short-term or extended stays — we tailor the arrangement to your family.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt-bg" id="about">
+  <div class="wrap about-split">
+    <div class="about-visual">
+      <svg viewBox="0 0 400 400" width="72%" height="72%" style="position:relative; z-index:1;">
+        <ellipse cx="205" cy="345" rx="155" ry="80" fill="#8A9A7E"/>
+        <circle cx="195" cy="185" r="78" fill="#D9BFA6"/>
+        <path d="M140 150 Q195 90 250 150 Q262 175 250 195 L140 195 Q128 175 140 150 Z" fill="#6B5A46"/>
+        <ellipse cx="245" cy="262" rx="82" ry="62" fill="#F0DACB"/>
+        <circle cx="248" cy="222" r="42" fill="#F8E7D8"/>
+        <path d="M215 190 Q248 172 281 190 Q286 200 281 208 L215 208 Q210 200 215 190 Z" fill="#7A5C3E"/>
+        <circle cx="234" cy="220" r="3.6" fill="#2B2320"/>
+        <circle cx="262" cy="220" r="3.6" fill="#2B2320"/>
+        <circle cx="226" cy="232" r="6.5" fill="#E8967C" opacity=".55"/>
+        <circle cx="270" cy="232" r="6.5" fill="#E8967C" opacity=".55"/>
+        <path d="M231 236 Q248 250 265 236" stroke="#2B2320" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+        <path d="M355 120 c-9-11-27-4-25 9c2 11 25 27 25 27s23-16 25-27c2-13-16-20-25-9z" fill="#C05B4E" opacity=".85"/>
+        <circle cx="70" cy="90" r="7" fill="#C05B4E" opacity=".6"/>
+        <circle cx="95" cy="65" r="4" fill="#8A9A7E" opacity=".7"/>
+        <path d="M60 240 c-7-9-21-3-19 7c1 9 19 21 19 21s18-12 19-21c2-10-12-16-19-7z" fill="#8A9A7E" opacity=".6"/>
+      </svg>
+    </div>
+    <div class="about-text">
+      <span class="eyebrow" data-key="about.f1">Our Story</span>
+      <h2 data-key="about.f2">Rooted in New Zealand care, trusted across Australia</h2>
+      <p data-key="about.f3">We started this agency to bridge two things new parents need most: hands they can trust, and knowledge that respects tradition. Every nanny in our network is trained, background-checked and supported by our team on both sides of the Tasman.</p>
+      <div class="check-list">
+        <div><span class="tick">✓</span><span data-key="about.f4">Background-checked, trained caregivers</span></div>
+        <div><span class="tick">✓</span><span data-key="about.f5">Bilingual coordination team (EN / 中文)</span></div>
+        <div><span class="tick">✓</span><span data-key="about.f6">Support across both NZ and AU</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt-bg" id="testimonials">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-key="testimonials.f1">Testimonials</span>
+      <h2 data-key="testimonials.f2">Families &amp; carers we've supported</h2>
+    </div>
+    <div class="quotes">
+      <div class="quote-card">
+        <div class="stars">★★★★★</div>
+        <p class="text" data-key="testimonials.f3">"Our nanny made the first month with our newborn so much calmer. She knew exactly what to do, and communication was never an issue."</p>
+        <div class="who"><div class="avatar">S</div><div><b data-key="testimonials.f4">Sarah, Sydney</b><span data-key="testimonials.f5">Placeholder review</span></div></div>
+      </div>
+      <div class="quote-card">
+        <div class="stars">★★★★★</div>
+        <p class="text" data-key="testimonials.f6">"The training program gave me the confidence and skills to start this career. I felt genuinely prepared for my first placement."</p>
+        <div class="who"><div class="avatar">L</div><div><b data-key="testimonials.f7">Li, Auckland</b><span data-key="testimonials.f8">Placeholder review</span></div></div>
+      </div>
+      <div class="quote-card">
+        <div class="stars">★★★★★</div>
+        <p class="text" data-key="testimonials.f9">"Professional from the first phone call to the day our nanny left. Highly recommend for any Melbourne family."</p>
+        <div class="who"><div class="avatar">J</div><div><b data-key="testimonials.f10">Jenny, Melbourne</b><span data-key="testimonials.f11">Placeholder review</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap" style="max-width:760px;">
+    <div class="section-head">
+      <span class="eyebrow" data-key="faq.f1">FAQ</span>
+      <h2 data-key="faq.f2">Common questions</h2>
+    </div>
+    <div id="faqList">
+      <div class="faq-item open">
+        <div class="faq-q"><span data-key="faq.f3">Do your nannies speak English?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p data-key="faq.f4">Most of our nannies are bilingual in English and Mandarin. Let us know your family's preference and we'll match accordingly.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span data-key="faq.f5">Which cities in Australia do you serve?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p data-key="faq.f6">[Placeholder — list your service cities here, e.g. Sydney, Melbourne, Brisbane.]</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span data-key="faq.f7">How far in advance should I book?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p data-key="faq.f8">[Placeholder — add your recommended booking lead time.]</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span data-key="faq.f9">How much does the service cost?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p data-key="faq.f10">[Placeholder — add pricing details or a starting-from figure.]</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span data-key="faq.f11">How do I apply to become a nanny?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p data-key="faq.f12">Get in touch via the contact form below and our team will walk you through the training and application process.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="working-with-us">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-key="working-with-us.f1">Become a Carer</span>
+      <h2 data-key="working-with-us.f2">Working With Us — Caregiver Training</h2>
+      <p data-key="working-with-us.f3">A practical program for anyone based in NZ who wants to build a career in postpartum and newborn care with us.</p>
+    </div>
+    <div class="training-box">
+      <div>
+        <h3 style="font-size:18px; margin-bottom:16px;" data-key="working-with-us.f4">What you'll learn</h3>
+        <ul>
+          <li><span class="tick">✓</span><span data-key="working-with-us.f5">Newborn care fundamentals &amp; safe sleep practices</span></li>
+          <li><span class="tick">✓</span><span data-key="working-with-us.f6">Postpartum recovery nutrition &amp; traditional confinement meals</span></li>
+          <li><span class="tick">✓</span><span data-key="working-with-us.f7">Breastfeeding &amp; feeding support basics</span></li>
+          <li><span class="tick">✓</span><span data-key="working-with-us.f8">Working respectfully in a client's home</span></li>
+          <li><span class="tick">✓</span><span data-key="working-with-us.f9">Cross-cultural communication for AU placements</span></li>
+        </ul>
+      </div>
+      <div class="training-meta">
+        <dl>
+          <dt data-key="working-with-us.f10">Format</dt><dd data-key="working-with-us.f11">In-person + online</dd>
+          <dt data-key="working-with-us.f12">Duration</dt><dd data-key="working-with-us.f13">[X] weeks</dd>
+          <dt data-key="working-with-us.f14">Location</dt><dd data-key="working-with-us.f15">[City], New Zealand</dd>
+          <dt data-key="working-with-us.f16">Next intake</dt><dd data-key="working-with-us.f17">[Date — placeholder]</dd>
+          <dt data-key="working-with-us.f18">Certificate</dt><dd data-key="working-with-us.f19">Yes, on completion</dd>
+        </dl>
+        <a href="#contact" class="btn" style="width:100%; text-align:center; margin-top:20px;" data-key="working-with-us.f20">Ask About Working With Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt-bg" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-info">
+      <span class="eyebrow" data-key="contact.f1">Get in Touch</span>
+      <h2 style="font-size:28px; font-weight:800; margin:14px 0 20px;" data-key="contact.f2">Let's find the right fit for your family</h2>
+      <div class="item">
+        <div class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg></div>
+        <div><h4 data-key="contact.f3">Email</h4><p>[info@yourdomain.com]</p></div>
+      </div>
+      <div class="item">
+        <div class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <div><h4 data-key="contact.f4">Phone / WhatsApp</h4><p>[+64 xx xxx xxxx]</p></div>
+      </div>
+      <div class="item">
+        <div class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div><h4 data-key="contact.f5">Based in</h4><p data-key="contact.f6">New Zealand — serving NZ &amp; Australia</p></div>
+      </div>
+    </div>
+    <form class="enquiry" onsubmit="return handleSubmit(event)">
+      <div class="form-row">
+        <div class="field">
+          <label data-key="contact.f7">Full Name</label>
+          <input type="text" required data-ph-key="contact.f8_ph">
+        </div>
+        <div class="field">
+          <label data-key="contact.f9">Email</label>
+          <input type="email" required data-ph-key="contact.f10_ph">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label data-key="contact.f11">Phone</label>
+          <input type="tel" data-ph-key="contact.f12_ph">
+        </div>
+        <div class="field">
+          <label data-key="contact.f13">I'm enquiring as a…</label>
+          <select>
+            <option data-key="contact.f14">Family seeking care</option>
+            <option data-key="contact.f15">Prospective nanny / trainee</option>
+            <option data-key="contact.f16">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label data-key="contact.f17">Message</label>
+        <textarea data-ph-key="contact.f18_ph"></textarea>
+      </div>
+      <button type="submit" class="btn" style="width:100%;" data-key="contact.f19">Send Enquiry</button>
+      <p class="form-note" data-key="contact.f20">This is a demo form — it isn't connected to email yet. We'll wire it up once the site is on real hosting.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand"><span class="mark">A</span><span data-key="footer.f1">Aroha Postpartum Care</span></div>
+        <p class="tag" data-key="footer.f2">Connecting trained New Zealand confinement nannies with families across Australia, and training the next generation of carers.</p>
+      </div>
+      <div>
+        <h5 data-key="footer.f3">Explore</h5>
+        <ul>
+          <li><a href="#services" data-key="footer.f4">Services</a></li>
+          <li><a href="#training" data-key="footer.f5">Training</a></li>
+          <li><a href="#faq" data-key="footer.f6">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-key="footer.f7">Contact</h5>
+        <ul>
+          <li>[info@yourdomain.com]</li>
+          <li>[+64 xx xxx xxxx]</li>
+          <li data-key="footer.f8">New Zealand</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-key="footer.f9">© 2026 Aroha Postpartum Care — placeholder name, replace before launch.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  let currentLang = 'en';
+  let siteContent = {}; // populated from content/*.json — this is what the CMS edits
+  const langToggle = document.getElementById('langToggle');
+
+  // Content lives as one JSON file per section under /content (content/header.json,
+  // content/home.json, etc.) so the CMS can show a clean per-section editing list.
+  // Each file is keyed by its short field id (f1, f2, f1_ph...); here we merge them
+  // all back into one flat lookup using "group.fN" keys, matching data-key in the HTML.
+  const CONTENT_GROUPS = ['banner','header','home','services','why-us','about','testimonials','faq','working-with-us','contact','footer'];
+
+  async function loadContent(){
+    siteContent = {};
+    await Promise.all(CONTENT_GROUPS.map(async (group) => {
+      try{
+        const res = await fetch(`content/${group}.json`, { cache: 'no-store' });
+        if(!res.ok) return;
+        const data = await res.json();
+        Object.keys(data).forEach(suffix => {
+          siteContent[`${group}.${suffix}`] = data[suffix];
+        });
+      }catch(err){
+        console.warn(`content/${group}.json failed to load, falling back to built-in text`, err);
+      }
+    }));
+  }
+
+  function applyLang(lang){
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-key]').forEach(el=>{
+      const entry = siteContent[el.getAttribute('data-key')];
+      if(!entry) return; // no CMS content yet — keep the static fallback text in the HTML
+      const val = lang === 'zh' ? entry.zh : entry.en;
+      if(val !== undefined && val !== null) el.innerHTML = val;
+    });
+    document.querySelectorAll('[data-ph-key]').forEach(el=>{
+      const entry = siteContent[el.getAttribute('data-ph-key')];
+      if(!entry) return;
+      const val = lang === 'zh' ? entry.zh : entry.en;
+      if(val !== undefined && val !== null) el.setAttribute('placeholder', val);
+    });
+    langToggle.textContent = lang === 'zh' ? 'English' : '中文';
+  }
+
+  langToggle.addEventListener('click', ()=>{
+    currentLang = currentLang === 'en' ? 'zh' : 'en';
+    applyLang(currentLang);
+  });
+
+  document.getElementById('menuToggle').addEventListener('click', ()=>{
+    document.querySelector('nav.links').classList.toggle('mobile-open');
+  });
+  document.querySelectorAll('nav.links a').forEach(a=>{
+    a.addEventListener('click', ()=> document.querySelector('nav.links').classList.remove('mobile-open'));
+  });
+
+  const contactDropdown = document.getElementById('contactDropdown');
+  contactDropdown.querySelector('.nav-dropdown-trigger').addEventListener('click', (e)=>{
+    e.stopPropagation();
+    contactDropdown.classList.toggle('open');
+  });
+  document.addEventListener('click', ()=> contactDropdown.classList.remove('open'));
+
+  document.querySelectorAll('.faq-q').forEach(q=>{
+    q.addEventListener('click', ()=>{
+      q.parentElement.classList.toggle('open');
+    });
+  });
+
+  function handleSubmit(e){
+    e.preventDefault();
+    alert(currentLang === 'zh' ? '这是演示表单，暂未连接真实提交功能。' : 'This is a demo form — submissions are not yet connected.');
+    return false;
+  }
+
+  loadContent().then(()=> applyLang(currentLang));
+
+  // Hero background slideshow — auto-rotate placeholder slides
+  const heroSlides = document.querySelectorAll('.hero-slide');
+  let heroIndex = 0;
+  if(heroSlides.length > 1){
+    setInterval(()=>{
+      heroSlides[heroIndex].classList.remove('active');
+      heroIndex = (heroIndex + 1) % heroSlides.length;
+      heroSlides[heroIndex].classList.add('active');
+    }, 4500);
+  }
+</script>
+
+</body>
+</html>
