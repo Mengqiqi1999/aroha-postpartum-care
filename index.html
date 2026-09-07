@@ -93,7 +93,8 @@
   /* hero */
   .hero{
     position:relative; overflow:hidden;
-    padding:96px 24px 72px; text-align:center;
+    min-height:720px; padding:118px 24px 76px; text-align:center;
+    display:flex; align-items:center;
   }
   .hero-slides{position:absolute; inset:0; z-index:0;}
   .hero-slide{
@@ -104,7 +105,9 @@
   .hero-slide.active{opacity:1;}
   .hero-scrim{
     position:absolute; inset:0; z-index:1;
-    background:linear-gradient(180deg, rgba(43,35,32,.62), rgba(43,35,32,.42) 45%, rgba(43,35,32,.68));
+    background:
+      linear-gradient(90deg, rgba(43,35,32,.72), rgba(43,35,32,.46) 48%, rgba(43,35,32,.34)),
+      linear-gradient(180deg, rgba(43,35,32,.34), rgba(43,35,32,.18) 45%, rgba(43,35,32,.58));
   }
   .hero .eyebrow{background:rgba(255,255,255,.16); color:#fff; border:1px solid rgba(255,255,255,.35);}
   .hero h1{color:#fff;}
@@ -280,6 +283,8 @@
     .menu-toggle{display:block;}
     .grid-3, .about-split, .steps, .quotes, .footer-grid, .contact-grid{grid-template-columns:1fr;}
     .training-box{grid-template-columns:1fr;}
+    .hero{min-height:660px; padding:104px 22px 64px;}
+    .hero-slide{background-position:84% center;}
     .hero h1{font-size:32px;}
     .about-visual{aspect-ratio:4/5;}
     .form-row{grid-template-columns:1fr;}
@@ -321,18 +326,8 @@
 </header>
 
 <section class="hero" id="home">
-  <!--
-    HERO BACKGROUND SLIDESHOW — placeholder slides.
-    To use real photos later: on each .hero-slide below, replace the
-    "background:" gradient with e.g. background-image:url('photo.jpg');
-    background-size:cover; background-position:center;
-    (4 slides auto-rotate, see .hero-slide JS near the bottom of the file)
-  -->
   <div class="hero-slides">
-    <div class="hero-slide active" style="background:linear-gradient(135deg,#C05B4E,#8A9A7E);"></div>
-    <div class="hero-slide" style="background:linear-gradient(135deg,#8A9A7E,#D9BFA6);"></div>
-    <div class="hero-slide" style="background:linear-gradient(135deg,#D9BFA6,#C05B4E);"></div>
-    <div class="hero-slide" style="background:linear-gradient(135deg,#6B5A46,#C05B4E);"></div>
+    <div class="hero-slide active" style="background-image:url('assets/images/hero-growth-journey.jpg');"></div>
   </div>
   <div class="hero-scrim"></div>
   <div class="wrap" style="position:relative; z-index:2;">
@@ -342,42 +337,7 @@
     <div class="cta-row">
       <a href="#contact" class="btn" data-key="home.f4" data-zh="咨询护理服务">Find Care Support</a>
     </div>
-    <div class="hero-images">
-      <div class="badge-circle">
-        <svg viewBox="0 0 200 200" width="82%" height="82%">
-          <circle cx="100" cy="105" r="70" fill="#F8E7D8"/>
-          <path d="M45 78 Q100 30 155 78 Q163 92 155 103 L45 103 Q37 92 45 78 Z" fill="#7A5C3E"/>
-          <circle cx="80" cy="100" r="6" fill="#2B2320"/>
-          <circle cx="120" cy="100" r="6" fill="#2B2320"/>
-          <circle cx="68" cy="118" r="11" fill="#E8967C" opacity=".55"/>
-          <circle cx="132" cy="118" r="11" fill="#E8967C" opacity=".55"/>
-          <path d="M72 122 Q100 148 128 122" stroke="#2B2320" stroke-width="4.5" fill="none" stroke-linecap="round"/>
-        </svg>
-      </div>
-      <div class="badge-circle offset">
-        <svg viewBox="0 0 200 200" width="72%" height="72%">
-          <path d="M100 60 C70 30 30 40 25 75 C20 105 55 130 100 150 C145 130 180 105 175 75 C170 40 130 30 100 60 Z" fill="#C05B4E" opacity="0.15"/>
-          <path d="M40 120 C30 140 40 160 65 165 C90 170 130 170 155 165 C180 160 190 140 180 120" stroke="#8A9A7E" stroke-width="9" fill="none" stroke-linecap="round"/>
-          <path d="M100 70 C85 50 55 55 52 78 C50 98 75 115 100 128 C125 115 150 98 148 78 C145 55 115 50 100 70 Z" fill="#C05B4E"/>
-        </svg>
-      </div>
-      <div class="badge-circle">
-        <svg viewBox="0 0 400 400" width="88%" height="88%">
-          <ellipse cx="205" cy="345" rx="155" ry="80" fill="#8A9A7E"/>
-          <circle cx="195" cy="185" r="78" fill="#D9BFA6"/>
-          <path d="M140 150 Q195 90 250 150 Q262 175 250 195 L140 195 Q128 175 140 150 Z" fill="#6B5A46"/>
-          <ellipse cx="245" cy="262" rx="82" ry="62" fill="#F0DACB"/>
-          <circle cx="248" cy="222" r="42" fill="#F8E7D8"/>
-          <path d="M215 190 Q248 172 281 190 Q286 200 281 208 L215 208 Q210 200 215 190 Z" fill="#7A5C3E"/>
-          <circle cx="234" cy="220" r="3.6" fill="#2B2320"/>
-          <circle cx="262" cy="220" r="3.6" fill="#2B2320"/>
-          <circle cx="226" cy="232" r="6.5" fill="#E8967C" opacity=".55"/>
-          <circle cx="270" cy="232" r="6.5" fill="#E8967C" opacity=".55"/>
-          <path d="M231 236 Q248 250 265 236" stroke="#2B2320" stroke-width="2.6" fill="none" stroke-linecap="round"/>
-        </svg>
-      </div>
-    </div>
-    <p class="img-note" data-key="home.f5" data-zh="以上为原创插画（非版权图库照片），可自由使用。">Illustrations, not stock photos — original artwork, free to use.</p>
+    <p class="img-note" data-key="home.f5" data-zh="首页背景为原创插画，表达从新生儿到入学前的成长陪伴。">Original illustration showing care from newborn through preschool years.</p>
     <div class="badge-row">
       <span><i class="dot"></i><span data-key="home.f6" data-zh="新西兰专业培训认证">NZ-trained caregivers</span></span>
       <span><i class="dot"></i><span data-key="home.f7" data-zh="中英双语沟通支持">Bilingual support (EN / 中文)</span></span>
