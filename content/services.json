@@ -4,36 +4,36 @@
     "zh": "我们的服务"
   },
   "f2": {
-    "en": "Two ways we support new families",
-    "zh": "两大核心服务，全程用心陪伴"
+    "en": "How we support families",
+    "zh": "我们如何为家庭提供支持"
   },
   "f3": {
-    "en": "Whether you need hands-on postpartum support or want to become a confinement carer yourself, we're here to help.",
-    "zh": "无论您是需要专业的产后护理支持，还是想成为一名月嫂，我们都能为您提供帮助。"
+    "en": "Whether you need hands-on care from the newborn stage through to school age, support for an elderly family member, or want to become a professional carer yourself, we're here to help.",
+    "zh": "无论您需要从新生儿阶段到入学前的全程专业照护、为年长的家人寻找照护支持，还是想成为一名专业护理人员，我们都能为您提供帮助。"
   },
   "f4": {
-    "en": "Confinement Nanny Placement",
-    "zh": "月嫂匹配服务"
+    "en": "Postpartum & Newborn Care",
+    "zh": "月嫂产后护理"
   },
   "f5": {
-    "en": "We match vetted, experienced NZ confinement nannies with families in Australia for live-in or live-out postpartum support, newborn care and traditional recovery practices.",
-    "zh": "我们为澳大利亚家庭匹配经过审核、经验丰富的新西兰月嫂，提供住家或非住家的产后护理、新生儿照护及传统坐月子调理服务。"
+    "en": "Support for the postpartum period and newborn stage, including mother-and-baby care, overnight help where needed, and confinement meal (月子餐) preparation. Our care approach draws on Taiwan confinement-centre methods and traditional Chinese medicine-informed recovery concepts.",
+    "zh": "为产后妈妈与新生宝宝提供月嫂照护支持，包括妈妈与宝宝护理、按需安排夜间照护，以及月子餐制作。我们的护理理念结合台湾月子中心护理手法与中医调理思路。"
   },
   "f6": {
-    "en": "Caregiver Training Program",
-    "zh": "月嫂培训课程"
+    "en": "Long-term Nanny & Childcare",
+    "zh": "长期保姆 / 育儿照护"
   },
   "f7": {
-    "en": "A structured training pathway for anyone in NZ wanting to become a professional postpartum carer, covering newborn care, nutrition, and cross-cultural client care.",
-    "zh": "面向新西兰有意成为专业月嫂的人士，系统学习新生儿照护、产后营养及跨文化客户服务等内容。"
+    "en": "Longer-term nanny and childcare support for babies from around 2 months through to preschool or school age, with flexible live-in, live-out, day or overnight arrangements.",
+    "zh": "为约2个月至入学前宝宝/儿童提供长期保姆与育儿照护支持，可根据家庭需要安排住家或非住家、白班或夜班服务。"
   },
   "f8": {
-    "en": "Ongoing Support",
-    "zh": "全程跟进支持"
+    "en": "Elder Companion Care",
+    "zh": "老人陪伴师服务"
   },
   "f9": {
-    "en": "From first enquiry to placement and beyond, our team stays in touch with both families and carers to make sure every arrangement goes smoothly.",
-    "zh": "从初次咨询到正式匹配，我们的团队会持续跟进家庭与月嫂双方，确保整个服务过程顺利安心。"
+    "en": "Companionship and gentle day-to-day support for older family members, such as conversation, errands, simple outings and regular visits. This is positioned as companion support, not medical or high-dependency care.",
+    "zh": "为家中长辈提供温和的日常陪伴支持，例如聊天陪伴、简单外出、日常事务协助与定期探访。此服务定位为陪伴与生活支持，不包含医疗或高风险照护。"
   },
   "f10": {
     "en": "How placement works",
@@ -44,31 +44,47 @@
     "zh": "提交咨询"
   },
   "f12": {
-    "en": "Tell us about your family's needs and timeline.",
-    "zh": "告诉我们您家庭的需求与预计时间"
+    "en": "Tell us your care type, location, dates, household setup and preferred contact channel.",
+    "zh": "告诉我们服务类型、所在地区、预计时间、家庭安排与偏好联系方式。"
   },
   "f13": {
-    "en": "Matching",
-    "zh": "匹配月嫂"
+    "en": "Initial Matching",
+    "zh": "初步匹配"
   },
   "f14": {
-    "en": "We shortlist vetted nannies suited to you.",
-    "zh": "我们为您筛选合适的专业月嫂"
+    "en": "We shortlist suitable carers based on your family needs, language preference, schedule and location.",
+    "zh": "我们根据家庭需求、语言偏好、服务时间与所在地区，为您筛选合适的护理人员。"
   },
   "f15": {
     "en": "Interview",
     "zh": "沟通确认"
   },
   "f16": {
-    "en": "Meet your nanny and confirm the arrangement.",
-    "zh": "与月嫂沟通并确认合作细节"
+    "en": "Meet the carer, ask questions, and confirm the arrangement only when both sides feel comfortable.",
+    "zh": "与护理人员沟通面谈，确认服务细节；双方都满意后再进入正式确认。"
   },
   "f17": {
     "en": "Placement",
     "zh": "正式上岗"
   },
   "f18": {
-    "en": "Care begins, with our team on call throughout.",
-    "zh": "服务正式开始，我们全程提供支持"
+    "en": "Care begins, with our coordination team continuing to follow up throughout the arrangement.",
+    "zh": "服务正式开始后，我们的协调团队会在整个服务期间持续跟进支持。"
+  },
+  "f19": {
+    "en": "Caregiver Training Program",
+    "zh": "月嫂培训课程"
+  },
+  "f20": {
+    "en": "A practical training pathway for people in New Zealand who want to become professional postpartum carers, covering newborn care, postpartum nutrition, family communication and client-home service etiquette.",
+    "zh": "面向新西兰本地有意成为专业月嫂的人士，系统学习新生儿照护、产后营养、家庭沟通，以及进入客户家庭服务前需要了解的服务礼仪。"
+  },
+  "f29": {
+    "en": "Pre-placement Training",
+    "zh": "岗前培训"
+  },
+  "f30": {
+    "en": "Before starting, the carer completes role-specific preparation so household details, expectations and service boundaries are clear.",
+    "zh": "正式上岗前，护理人员会完成对应服务的岗前准备，确认家庭细节、服务边界与双方期待。"
   }
 }

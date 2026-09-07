@@ -37,7 +37,7 @@ collections:
         name: header
         file: content/header.json
         fields:
-          - {label: 'Aroha Postpartum Care', name: f1, widget: object, collapsed: true, fields: [
+          - {label: 'Joyful (brand name)', name: f1, widget: object, collapsed: true, fields: [
               {label: 'English', name: 'en', widget: 'string'},
               {label: '中文 Chinese', name: 'zh', widget: 'string'},
             ]}
@@ -197,6 +197,22 @@ collections:
               {label: 'English', name: 'en', widget: 'string'},
               {label: '中文 Chinese', name: 'zh', widget: 'string'},
             ]}
+          - {label: 'Elder Care & Companionship', name: f19, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'We''re also expanding into elder care…', name: f20, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'text'},
+              {label: '中文 Chinese', name: 'zh', widget: 'text'},
+            ]}
+          - {label: 'Pre-placement Training (step 4)', name: f29, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Before starting with your family…', name: f30, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
 
   - label: 'Why Choose Us 为什么选择我们'
     name: why-us
@@ -225,11 +241,11 @@ collections:
               {label: 'English', name: 'en', widget: 'text'},
               {label: '中文 Chinese', name: 'zh', widget: 'text'},
             ]}
-          - {label: 'Thoroughly Vetted', name: f6, widget: object, collapsed: true, fields: [
+          - {label: 'Clear, Compliant Arrangements', name: f6, widget: object, collapsed: true, fields: [
               {label: 'English', name: 'en', widget: 'string'},
               {label: '中文 Chinese', name: 'zh', widget: 'string'},
             ]}
-          - {label: 'All caregivers pass background checks and ref…', name: f7, widget: object, collapsed: true, fields: [
+          - {label: 'Clarify readiness, transport and tax handling', name: f7, widget: object, collapsed: true, fields: [
               {label: 'English', name: 'en', widget: 'text'},
               {label: '中文 Chinese', name: 'zh', widget: 'text'},
             ]}
@@ -241,15 +257,15 @@ collections:
               {label: 'English', name: 'en', widget: 'text'},
               {label: '中文 Chinese', name: 'zh', widget: 'text'},
             ]}
-          - {label: 'Personalised Matching', name: f10, widget: object, collapsed: true, fields: [
+          - {label: 'Coordination & Follow-up', name: f10, widget: object, collapsed: true, fields: [
               {label: 'English', name: 'en', widget: 'string'},
               {label: '中文 Chinese', name: 'zh', widget: 'string'},
             ]}
-          - {label: 'We take time to understand your family''s need…', name: f11, widget: object, collapsed: true, fields: [
+          - {label: 'Coordinate communication and follow up', name: f11, widget: object, collapsed: true, fields: [
               {label: 'English', name: 'en', widget: 'text'},
               {label: '中文 Chinese', name: 'zh', widget: 'text'},
             ]}
-          - {label: 'NZ ⇄ AU Support', name: f12, widget: object, collapsed: true, fields: [
+          - {label: 'NZ & AU Coverage', name: f12, widget: object, collapsed: true, fields: [
               {label: 'English', name: 'en', widget: 'string'},
               {label: '中文 Chinese', name: 'zh', widget: 'string'},
             ]}
@@ -349,6 +365,42 @@ collections:
               {label: 'English', name: 'en', widget: 'string'},
               {label: '中文 Chinese', name: 'zh', widget: 'string'},
             ]}
+          - {label: '“I did my training while based in Queenstown …', name: f12, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'text'},
+              {label: '中文 Chinese', name: 'zh', widget: 'text'},
+            ]}
+          - {label: 'Anna, Queenstown', name: f13, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Placeholder review', name: f14, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: '“Training here gave me real, hands-on newborn …', name: f15, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'text'},
+              {label: '中文 Chinese', name: 'zh', widget: 'text'},
+            ]}
+          - {label: 'Grace, Dunedin', name: f16, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Placeholder review', name: f17, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: '“From the first enquiry to the day our carer a…', name: f18, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'text'},
+              {label: '中文 Chinese', name: 'zh', widget: 'text'},
+            ]}
+          - {label: 'Amy, Brisbane', name: f19, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Placeholder review', name: f20, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
 
   - label: 'FAQ 常见问题'
     name: faq
@@ -373,11 +425,11 @@ collections:
               {label: 'English', name: 'en', widget: 'text'},
               {label: '中文 Chinese', name: 'zh', widget: 'text'},
             ]}
-          - {label: 'Which cities in Australia do you serve?', name: f5, widget: object, collapsed: true, fields: [
+          - {label: 'Which areas do you serve?', name: f5, widget: object, collapsed: true, fields: [
               {label: 'English', name: 'en', widget: 'string'},
               {label: '中文 Chinese', name: 'zh', widget: 'string'},
             ]}
-          - {label: '[Placeholder — list your service cities here,…', name: f6, widget: object, collapsed: true, fields: [
+          - {label: 'Which areas do you serve? (answer)', name: f6, widget: object, collapsed: true, fields: [
               {label: 'English', name: 'en', widget: 'text'},
               {label: '中文 Chinese', name: 'zh', widget: 'text'},
             ]}
@@ -385,23 +437,23 @@ collections:
               {label: 'English', name: 'en', widget: 'string'},
               {label: '中文 Chinese', name: 'zh', widget: 'string'},
             ]}
-          - {label: '[Placeholder — add your recommended booking l…', name: f8, widget: object, collapsed: true, fields: [
+          - {label: 'How far in advance should I book? (answer)', name: f8, widget: object, collapsed: true, fields: [
               {label: 'English', name: 'en', widget: 'string'},
               {label: '中文 Chinese', name: 'zh', widget: 'string'},
-            ]}
-          - {label: 'How much does the service cost?', name: f9, widget: object, collapsed: true, fields: [
-              {label: 'English', name: 'en', widget: 'string'},
-              {label: '中文 Chinese', name: 'zh', widget: 'string'},
-            ]}
-          - {label: '[Placeholder — add pricing details or a start…', name: f10, widget: object, collapsed: true, fields: [
-              {label: 'English', name: 'en', widget: 'text'},
-              {label: '中文 Chinese', name: 'zh', widget: 'text'},
             ]}
           - {label: 'How do I apply to become a nanny?', name: f11, widget: object, collapsed: true, fields: [
               {label: 'English', name: 'en', widget: 'string'},
               {label: '中文 Chinese', name: 'zh', widget: 'string'},
             ]}
           - {label: 'Get in touch via the contact form below and o…', name: f12, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'text'},
+              {label: '中文 Chinese', name: 'zh', widget: 'text'},
+            ]}
+          - {label: 'Do you need your caregiver to be able to drive?', name: f13, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Many of our caregivers hold a valid licence…', name: f14, widget: object, collapsed: true, fields: [
               {label: 'English', name: 'en', widget: 'text'},
               {label: '中文 Chinese', name: 'zh', widget: 'text'},
             ]}
@@ -429,7 +481,7 @@ collections:
               {label: 'English', name: 'en', widget: 'string'},
               {label: '中文 Chinese', name: 'zh', widget: 'string'},
             ]}
-          - {label: 'Newborn care fundamentals &amp; safe sleep pr…', name: f5, widget: object, collapsed: true, fields: [
+          - {label: 'Newborn care, infant first aid & safe sleep', name: f5, widget: object, collapsed: true, fields: [
               {label: 'English', name: 'en', widget: 'string'},
               {label: '中文 Chinese', name: 'zh', widget: 'string'},
             ]}
@@ -581,6 +633,206 @@ collections:
               {label: 'English', name: 'en', widget: 'text'},
               {label: '中文 Chinese', name: 'zh', widget: 'text'},
             ]}
+          - {label: 'Message us', name: f21, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'LINE / WeChat / WhatsApp by audience', name: f22, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Number of people needing care', name: f23, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: '1 person', name: f24, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: '2 or more people', name: f25, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Do you have your own home / a private room?', name: f26, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Yes', name: f27, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'No', name: f28, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Care type', name: f29, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Postpartum / confinement nanny', name: f30, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Nanny / childcare', name: f31, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Elder companion care', name: f32, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Caregiver training', name: f33, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Location', name: f34, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: '[Placeholder] City/town, country', name: f35_ph, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Preferred start date / duration', name: f36, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: '[Placeholder] Start date / duration', name: f37_ph, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Living arrangement', name: f38, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Live-in', name: f39, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Live-out', name: f40, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Flexible / not sure', name: f41, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Care schedule', name: f42, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Day care', name: f43, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Overnight care', name: f44, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Day and overnight', name: f45, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Preferred contact', name: f46, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Email option', name: f47, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Phone option', name: f48, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'WhatsApp option', name: f49, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'WeChat option', name: f50, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'LINE option', name: f51, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Your care needs', name: f52, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Training / application details', name: f53, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Current city', name: f54, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: '[Placeholder] City, New Zealand', name: f55_ph, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Do you have care experience?', name: f56, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Yes option', name: f57, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'No option', name: f58, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Some experience option', name: f59, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'I want to understand', name: f60, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Training course option', name: f61, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Joining the team option', name: f62, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Placement preparation option', name: f63, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Start learning or working time', name: f64, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: '[Placeholder] Availability', name: f65_ph, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Languages spoken', name: f66, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: '[Placeholder] Languages', name: f67_ph, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Anything else about your background?', name: f68, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: '[Placeholder] Background details', name: f69_ph, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'string'},
+              {label: '中文 Chinese', name: 'zh', widget: 'string'},
+            ]}
+          - {label: 'Form optional-fields note', name: f70, widget: object, collapsed: true, fields: [
+              {label: 'English', name: 'en', widget: 'text'},
+              {label: '中文 Chinese', name: 'zh', widget: 'text'},
+            ]}
 
   - label: 'Footer 页脚'
     name: footer
@@ -589,7 +841,7 @@ collections:
         name: footer
         file: content/footer.json
         fields:
-          - {label: 'Aroha Postpartum Care', name: f1, widget: object, collapsed: true, fields: [
+          - {label: 'Joyful (brand name)', name: f1, widget: object, collapsed: true, fields: [
               {label: 'English', name: 'en', widget: 'string'},
               {label: '中文 Chinese', name: 'zh', widget: 'string'},
             ]}
@@ -621,8 +873,7 @@ collections:
               {label: 'English', name: 'en', widget: 'string'},
               {label: '中文 Chinese', name: 'zh', widget: 'string'},
             ]}
-          - {label: '© 2026 Aroha Postpartum Care — placeholder na…', name: f9, widget: object, collapsed: true, fields: [
+          - {label: 'Copyright line', name: f9, widget: object, collapsed: true, fields: [
               {label: 'English', name: 'en', widget: 'text'},
               {label: '中文 Chinese', name: 'zh', widget: 'text'},
             ]}
-

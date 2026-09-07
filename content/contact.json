@@ -4,8 +4,8 @@
     "zh": "联系我们"
   },
   "f2": {
-    "en": "Let's find the right fit for your family",
-    "zh": "让我们为您找到最合适的月嫂"
+    "en": "Tell us what kind of support your family needs",
+    "zh": "告诉我们您家庭需要哪一种照护支持"
   },
   "f3": {
     "en": "Email",
@@ -20,8 +20,8 @@
     "zh": "所在地"
   },
   "f6": {
-    "en": "New Zealand — serving NZ &amp; Australia",
-    "zh": "新西兰 — 服务新西兰与澳大利亚"
+    "en": "New Zealand — serving towns and cities across NZ &amp; Australia",
+    "zh": "新西兰 — 服务新西兰与澳大利亚各城市/城镇"
   },
   "f7": {
     "en": "Full Name",
@@ -48,28 +48,28 @@
     "zh": "选填"
   },
   "f13": {
-    "en": "I'm enquiring as a…",
-    "zh": "我的身份是…"
+    "en": "My enquiry type",
+    "zh": "我的咨询类型"
   },
   "f14": {
-    "en": "Family seeking care",
-    "zh": "需要护理服务的家庭"
+    "en": "Find Care Support",
+    "zh": "找月嫂 / 护理人员"
   },
   "f15": {
-    "en": "Prospective nanny / trainee",
-    "zh": "想成为月嫂 / 学员"
+    "en": "Become a Carer",
+    "zh": "成为月嫂 / 加入培训"
   },
   "f16": {
     "en": "Other",
     "zh": "其他"
   },
   "f17": {
-    "en": "Message",
-    "zh": "留言"
+    "en": "Anything else we should know?",
+    "zh": "还有其他需要说明的吗？"
   },
   "f18_ph": {
-    "en": "Tell us a little about what you need…",
-    "zh": "请简单描述您的需求…"
+    "en": "Share due date, child age, elder care needs, language preferences, pets, or other household details…",
+    "zh": "可填写预产期、孩子年龄、长者需求、语言偏好、是否有宠物或其他家庭情况…"
   },
   "f19": {
     "en": "Send Enquiry",
@@ -78,5 +78,205 @@
   "f20": {
     "en": "This is a demo form — it isn't connected to email yet. We'll wire it up once the site is on real hosting.",
     "zh": "这是演示表单，目前尚未连接邮箱，正式上线后会接入真实的表单/邮件服务。"
+  },
+  "f21": {
+    "en": "Message us",
+    "zh": "在线联系"
+  },
+  "f22": {
+    "en": "LINE (Taiwan) · WeChat 微信 (Mainland China) · WhatsApp (English) — QR codes coming soon",
+    "zh": "LINE（台湾）· 微信 WeChat（中国大陆）· WhatsApp（英语）— 二维码待补充"
+  },
+  "f23": {
+    "en": "Number of people needing care",
+    "zh": "需要照护的人数"
+  },
+  "f24": {
+    "en": "1 person",
+    "zh": "1位"
+  },
+  "f25": {
+    "en": "2 or more people",
+    "zh": "2位或以上"
+  },
+  "f26": {
+    "en": "Do you have your own home / a private room available?",
+    "zh": "您是否有独立的住所或房间可供使用？"
+  },
+  "f27": {
+    "en": "Yes",
+    "zh": "是"
+  },
+  "f28": {
+    "en": "No",
+    "zh": "否"
+  },
+  "f29": {
+    "en": "Care type",
+    "zh": "服务类型"
+  },
+  "f30": {
+    "en": "Postpartum / confinement nanny",
+    "zh": "月嫂产后护理"
+  },
+  "f31": {
+    "en": "Nanny / childcare",
+    "zh": "保姆 / 育儿照护"
+  },
+  "f32": {
+    "en": "Elder companion care",
+    "zh": "老人陪伴师服务"
+  },
+  "f33": {
+    "en": "Caregiver training",
+    "zh": "月嫂培训 / 加入我们"
+  },
+  "f34": {
+    "en": "Location",
+    "zh": "服务地点"
+  },
+  "f35_ph": {
+    "en": "City/town, country",
+    "zh": "城市/城镇，国家"
+  },
+  "f36": {
+    "en": "Preferred start date / duration",
+    "zh": "预计开始时间 / 服务时长"
+  },
+  "f37_ph": {
+    "en": "e.g. March 2027, 6 weeks",
+    "zh": "例如：2027年3月，6周"
+  },
+  "f38": {
+    "en": "Living arrangement",
+    "zh": "住家安排"
+  },
+  "f39": {
+    "en": "Live-in",
+    "zh": "住家"
+  },
+  "f40": {
+    "en": "Live-out",
+    "zh": "非住家"
+  },
+  "f41": {
+    "en": "Flexible / not sure",
+    "zh": "可商量 / 暂不确定"
+  },
+  "f42": {
+    "en": "Care schedule",
+    "zh": "服务时段"
+  },
+  "f43": {
+    "en": "Day care",
+    "zh": "白班"
+  },
+  "f44": {
+    "en": "Overnight care",
+    "zh": "夜班"
+  },
+  "f45": {
+    "en": "Day and overnight",
+    "zh": "白班与夜班"
+  },
+  "f46": {
+    "en": "Preferred contact",
+    "zh": "偏好联系方式"
+  },
+  "f47": {
+    "en": "Email",
+    "zh": "邮箱"
+  },
+  "f48": {
+    "en": "Phone",
+    "zh": "电话"
+  },
+  "f49": {
+    "en": "WhatsApp",
+    "zh": "WhatsApp"
+  },
+  "f50": {
+    "en": "WeChat",
+    "zh": "微信 WeChat"
+  },
+  "f51": {
+    "en": "LINE",
+    "zh": "LINE"
+  },
+  "f52": {
+    "en": "Your care needs",
+    "zh": "您的照护需求"
+  },
+  "f53": {
+    "en": "Training / application details",
+    "zh": "培训 / 加入信息"
+  },
+  "f54": {
+    "en": "Current city",
+    "zh": "目前所在城市"
+  },
+  "f55_ph": {
+    "en": "City, New Zealand",
+    "zh": "例如：奥克兰，新西兰"
+  },
+  "f56": {
+    "en": "Do you have care experience?",
+    "zh": "是否有相关照护经验？"
+  },
+  "f57": {
+    "en": "Yes",
+    "zh": "有"
+  },
+  "f58": {
+    "en": "No",
+    "zh": "没有"
+  },
+  "f59": {
+    "en": "Some experience",
+    "zh": "有一些经验"
+  },
+  "f60": {
+    "en": "I want to understand",
+    "zh": "我想了解"
+  },
+  "f61": {
+    "en": "Training course",
+    "zh": "培训课程"
+  },
+  "f62": {
+    "en": "Joining the team",
+    "zh": "加入团队"
+  },
+  "f63": {
+    "en": "Placement preparation",
+    "zh": "上岗准备"
+  },
+  "f64": {
+    "en": "When could you start learning or working?",
+    "zh": "您预计何时可以开始学习或工作？"
+  },
+  "f65_ph": {
+    "en": "e.g. weekends, next month, flexible",
+    "zh": "例如：周末、下个月、时间可商量"
+  },
+  "f66": {
+    "en": "Languages spoken",
+    "zh": "可沟通语言"
+  },
+  "f67_ph": {
+    "en": "e.g. Mandarin, Cantonese, English",
+    "zh": "例如：普通话、粤语、英文"
+  },
+  "f68": {
+    "en": "Anything else about your background?",
+    "zh": "还有其他背景想补充吗？"
+  },
+  "f69_ph": {
+    "en": "Share care experience, training goals, availability, or questions…",
+    "zh": "可填写照护经验、学习目标、可安排时间或想咨询的问题…"
+  },
+  "f70": {
+    "en": "Filling in more details helps us respond faster. Anything unsure can be left blank.",
+    "zh": "填写越详细，我们越能快速回复；不确定的项目可以留空。"
   }
 }

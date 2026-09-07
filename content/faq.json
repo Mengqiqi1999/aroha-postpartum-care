@@ -12,39 +12,39 @@
     "zh": "月嫂会说英语吗？"
   },
   "f4": {
-    "en": "Most of our nannies are bilingual in English and Mandarin. Let us know your family's preference and we'll match accordingly.",
-    "zh": "我们的大部分月嫂都能中英双语沟通，请告知我们您家庭的偏好，我们会为您做相应匹配。"
+    "en": "Our coordination team supports English and Chinese communication, and many caregivers are bilingual in English and Mandarin. Let us know your family's preference and we'll match accordingly.",
+    "zh": "我们的协调团队提供中英双语沟通支持，许多护理人员也可中英双语沟通。请告知我们您家庭的语言偏好，我们会为您做相应匹配。"
   },
   "f5": {
-    "en": "Which cities in Australia do you serve?",
-    "zh": "你们服务澳大利亚哪些城市？"
+    "en": "Which areas do you serve?",
+    "zh": "你们的服务范围包括哪些地区？"
   },
   "f6": {
-    "en": "[Placeholder — list your service cities here, e.g. Sydney, Melbourne, Brisbane.]",
-    "zh": "[占位内容 — 请填写具体服务城市，例如悉尼、墨尔本、布里斯班]"
+    "en": "We support families in cities and towns across New Zealand and Australia, including arrangements within NZ and between NZ and Australia.",
+    "zh": "我们服务新西兰与澳大利亚各城市及城镇的家庭，也支持新西兰本地不同地区之间，以及新西兰与澳大利亚之间的服务安排。"
   },
   "f7": {
     "en": "How far in advance should I book?",
     "zh": "需要提前多久预约？"
   },
   "f8": {
-    "en": "[Placeholder — add your recommended booking lead time.]",
-    "zh": "[占位内容 — 请填写建议的提前预约时间]"
-  },
-  "f9": {
-    "en": "How much does the service cost?",
-    "zh": "服务费用大概是多少？"
-  },
-  "f10": {
-    "en": "[Placeholder — add pricing details or a starting-from figure.]",
-    "zh": "[占位内容 — 请填写具体价格或起始价]"
+    "en": "There's no fixed minimum — but our most experienced caregivers are matched quickly and can be booked out, so we recommend reaching out as soon as you know your due date or start date. Once you've met a caregiver you're happy with, we recommend confirming with a deposit and signed agreement promptly, as popular caregivers are often booked by other families in the meantime.",
+    "zh": "没有固定的最短时间——不过我们经验丰富的护理人员往往很快就被预订满，建议您一旦确定预产期或服务开始时间，就尽早与我们联系。完成匹配、面谈满意后，也建议尽快支付定金、签署协议确认，因为受欢迎的月嫂常常会被其他家庭提前预订。"
   },
   "f11": {
-    "en": "How do I apply to become a nanny?",
-    "zh": "我想成为月嫂，该怎么申请？"
+    "en": "Are service fees published on the website?",
+    "zh": "服务费用会在网站公开吗？"
   },
   "f12": {
-    "en": "Get in touch via the contact form below and our team will walk you through the training and application process.",
-    "zh": "请通过下方联系表单与我们取得联系，我们的团队会为您详细介绍培训与申请流程。"
+    "en": "Service fees are sensitive and are not published on the website for now. They vary depending on care type, location, schedule, live-in or live-out needs, and duration, so we discuss them after understanding your family's situation.",
+    "zh": "服务费用属于较敏感信息，暂时不在网站公开。费用会根据服务类型、地点、时间安排、住家或非住家、服务时长等因素不同而变化，我们会在了解您的家庭情况后再沟通合适方案。"
+  },
+  "f13": {
+    "en": "How do I apply to become a 月嫂?",
+    "zh": "我想成为月嫂，该怎么申请？"
+  },
+  "f14": {
+    "en": "Get in touch via the contact form below and our team will walk you through the training and application process, including course content, placement preparation and suitable service arrangements.",
+    "zh": "请通过下方联系表单与我们取得联系，我们的团队会为您详细介绍培训与申请流程，包括课程内容、上岗准备与合适的服务安排。"
   }
 }
